@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\Addresses\ValidationRules\**" />
+    <Compile Remove="Handlers\Baskets\ValidationRules\**" />
+    <Compile Remove="Handlers\Categories\ValidationRules\**" />
+    <Compile Remove="Handlers\Cities\ValidationRules\**" />
+    <Compile Remove="Handlers\Colors\ValidationRules\**" />
+    <Compile Remove="Handlers\Countries\ValidationRules\**" />
+    <Compile Remove="Handlers\Products\ValidationRules\**" />
+    <EmbeddedResource Remove="Handlers\Addresses\ValidationRules\**" />
+    <EmbeddedResource Remove="Handlers\Baskets\ValidationRules\**" />
+    <EmbeddedResource Remove="Handlers\Categories\ValidationRules\**" />
+    <EmbeddedResource Remove="Handlers\Cities\ValidationRules\**" />
+    <EmbeddedResource Remove="Handlers\Colors\ValidationRules\**" />
+    <EmbeddedResource Remove="Handlers\Countries\ValidationRules\**" />
+    <EmbeddedResource Remove="Handlers\Products\ValidationRules\**" />
+    <None Remove="Handlers\Addresses\ValidationRules\**" />
+    <None Remove="Handlers\Baskets\ValidationRules\**" />
+    <None Remove="Handlers\Categories\ValidationRules\**" />
+    <None Remove="Handlers\Cities\ValidationRules\**" />
+    <None Remove="Handlers\Colors\ValidationRules\**" />
+    <None Remove="Handlers\Countries\ValidationRules\**" />
+    <None Remove="Handlers\Products\ValidationRules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Folder Include="Services\BasketDetails\" />
+  </ItemGroup>
+
+</Project>
